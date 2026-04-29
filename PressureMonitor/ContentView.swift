@@ -4,10 +4,6 @@ import AppKit
 struct ContentView: View {
     @EnvironmentObject var state: AppState
 
-    private func openSettings() {
-        NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
-        NSApp.activate(ignoringOtherApps: true)
-    }
 
     private var relativeTime: String {
         guard let d = state.lastUpdated else { return "never" }
@@ -41,7 +37,7 @@ struct ContentView: View {
                     .buttonStyle(.plain)
                     .help("Refresh now")
                 }
-                Button { openSettings() } label: {
+                SettingsLink {
                     Image(systemName: "gearshape")
                         .font(.caption)
                 }

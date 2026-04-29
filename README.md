@@ -4,6 +4,10 @@ A macOS menu bar app that polls barometric pressure for any location and alerts 
 
 ![macOS 13+](https://img.shields.io/badge/macOS-13%2B-blue) ![No API key](https://img.shields.io/badge/API%20key-none%20required-green)
 
+
+<img width="312" height="362" alt="main" src="https://github.com/user-attachments/assets/6d5441d4-3f18-43fb-bd31-c56cdb530c17" />
+<img width="428" height="576" alt="settings" src="https://github.com/user-attachments/assets/4ce4b957-57bc-4dd3-9198-492aa12b5ddc" />
+
 ---
 
 ## What it does

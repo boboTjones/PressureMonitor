@@ -111,8 +111,8 @@ struct ContentView: View {
                 .font(.caption)
                 .foregroundStyle(.red)
             }
-        }
-        Divider()
+
+            Divider()
 
             // ── Footer ───────────────────────────────────────────────────
             HStack {

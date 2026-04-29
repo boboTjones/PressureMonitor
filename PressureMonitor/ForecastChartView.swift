@@ -36,8 +36,9 @@ struct ForecastChartView: View {
             // ── Area fill ────────────────────────────────────────────────────
             ForEach(forecast) { entry in
                 AreaMark(
-                    x: .value("Time",     entry.date),
-                    y: .value("Pressure", entry.seaLevelInHg)
+                    x:    .value("Time",     entry.date),
+                    yMin: .value("Floor",    yDomain.lowerBound),
+                    yMax: .value("Pressure", entry.seaLevelInHg)
                 )
                 .foregroundStyle(
                     .linearGradient(

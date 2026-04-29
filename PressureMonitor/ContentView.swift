@@ -3,7 +3,11 @@ import AppKit
 
 struct ContentView: View {
     @EnvironmentObject var state: AppState
-    @Environment(\.openSettings) private var openSettings
+
+    private func openSettings() {
+        NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+        NSApp.activate(ignoringOtherApps: true)
+    }
 
     private var relativeTime: String {
         guard let d = state.lastUpdated else { return "never" }

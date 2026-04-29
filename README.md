@@ -1,6 +1,6 @@
 # PressureMonitor
 
-A macOS menu bar app that polls barometric pressure for any location and alerts you when a storm is rolling in.
+A macOS menu bar app that polls barometric pressure for any location and alerts you when the pressure will drop below a configurable threshold (in inches of mercury).
 
 ![macOS 13+](https://img.shields.io/badge/macOS-13%2B-blue) ![No API key](https://img.shields.io/badge/API%20key-none%20required-green)
 

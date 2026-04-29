@@ -3,7 +3,7 @@ import AppKit
 
 struct ContentView: View {
     @EnvironmentObject var state: AppState
-    @State private var showSettings = false
+    @Environment(\.openSettings) private var openSettings
 
     private var relativeTime: String {
         guard let d = state.lastUpdated else { return "never" }
@@ -37,7 +37,7 @@ struct ContentView: View {
                     .buttonStyle(.plain)
                     .help("Refresh now")
                 }
-                Button { showSettings = true } label: {
+                Button { openSettings() } label: {
                     Image(systemName: "gearshape")
                         .font(.caption)
                 }
@@ -130,9 +130,5 @@ struct ContentView: View {
         .padding(14)
         .frame(width: 300)
         .background(.ultraThinMaterial)
-        .sheet(isPresented: $showSettings) {
-            SettingsView()
-                .environmentObject(state)
-        }
     }
 }

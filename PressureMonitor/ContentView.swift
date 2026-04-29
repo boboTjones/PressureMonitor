@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit
 
 struct ContentView: View {
     @EnvironmentObject var state: AppState
@@ -109,6 +110,21 @@ struct ContentView: View {
                 )
                 .font(.caption)
                 .foregroundStyle(.red)
+            }
+        }
+        Divider()
+
+            // ── Footer ───────────────────────────────────────────────────
+            HStack {
+                Spacer()
+                Button(role: .destructive) {
+                    NSApplication.shared.terminate(nil)
+                } label: {
+                    Label("Quit", systemImage: "power")
+                        .font(.caption)
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(.secondary)
             }
         }
         .padding(14)

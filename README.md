@@ -2,7 +2,10 @@
 
 A macOS menu bar app that polls barometric pressure for any location and alerts you when the pressure will drop below a configurable threshold (in inches of mercury).
 
-![macOS 13+](https://img.shields.io/badge/macOS-13%2B-blue) ![No API key](https://img.shields.io/badge/API%20key-none%20required-green)
+![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue) ![No API key](https://img.shields.io/badge/API%20key-none%20required-green)
+
+<img width="312" height="361" alt="main" src="https://github.com/user-attachments/assets/f7a73dc2-7a85-41da-ba96-1a5b97d6f838" />
+<img width="367" height="514" alt="settings" src="https://github.com/user-attachments/assets/8d3a679e-9680-4cc0-9937-04887e839a39" />
 
 ---
 

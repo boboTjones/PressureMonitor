@@ -6,7 +6,7 @@ A macOS menu bar app that polls barometric pressure for any location and alerts 
 
 
 <img width="312" height="362" alt="main" src="https://github.com/user-attachments/assets/6d5441d4-3f18-43fb-bd31-c56cdb530c17" />
-<img width="428" height="576" alt="settings" src="https://github.com/user-attachments/assets/4ce4b957-57bc-4dd3-9198-492aa12b5ddc" />
+<img width="367" height="514" alt="settings" src="https://github.com/user-attachments/assets/f911f57e-f4d6-4808-96c4-3bd586507032" />
 
 ---
 

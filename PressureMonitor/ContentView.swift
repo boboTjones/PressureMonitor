@@ -43,6 +43,9 @@ struct ContentView: View {
                 }
                 .buttonStyle(.plain)
                 .help("Settings")
+                .simultaneousGesture(TapGesture().onEnded {
+                    NSApp.activate(ignoringOtherApps: true)
+                })
             }
 
             Divider()
